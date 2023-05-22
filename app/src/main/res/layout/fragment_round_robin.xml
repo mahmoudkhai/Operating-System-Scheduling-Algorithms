@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoundRobinFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/taskName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Name"
+                android:gravity="center"
+                android:layout_margin="8dp" />
+        <EditText
+            android:id="@+id/firstReleaseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Release time"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_margin="8dp" />
+        <EditText
+            android:id="@+id/firstPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Period"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/executionTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Execution time"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deadline"
+            android:gravity="center"
+            android:layout_margin="8dp" />
+            <EditText
+            android:id="@+id/numberOfPeriods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number Of Periods"
+                android:gravity="center"
+            android:layout_margin="8dp" />
+            <Button
+                android:id="@+id/enterAnotherTask_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#375338"
+                android:text="Enter Another Task"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#856E24"
+            android:text="Clear"/>
+            <Button
+                android:id="@+id/firstCFS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Come First Serve"/>
+            <Button
+                android:id="@+id/minumumLaxity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum Laxity First "/>
+            <Button
+                android:id="@+id/edf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Earliest Deadline First"/>
+            <Button
+                android:id="@+id/roundRobin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Round Robin"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

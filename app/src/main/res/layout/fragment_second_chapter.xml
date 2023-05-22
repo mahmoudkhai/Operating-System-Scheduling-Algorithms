@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondChapterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <EditText
+        android:gravity="center"
+        android:id="@+id/startingTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Head Position"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:layout_marginBottom="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <TextView
+        android:text="Enter Requests Below"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1st"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <EditText
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="2nd"
+        android:textColor="#983B3B"
+        android:textColorHint="#983B3B"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+          <EditText
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="3rd"
+        android:textColor="#983B3B"
+        android:textColorHint="#9F6868"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+          <EditText
+        android:id="@+id/fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="4th"
+        android:textColor="#983B3B"
+        android:textColorHint="#422355"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <EditText
+        android:id="@+id/fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="5th"
+        android:textColor="#983B3B"
+        android:textColorHint="#7E5929"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+          <EditText
+        android:id="@+id/sixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="6th"
+        android:textColor="#983B3B"
+        android:textColorHint="#2C7E29"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+       <EditText
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="7th"
+        android:textColor="#983B3B"
+        android:textColorHint="#2C7E29"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+ <EditText
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="8th"
+        android:textColor="#983B3B"
+        android:textColorHint="#2C7E29"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+ <EditText
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="9th"
+        android:textColor="#983B3B"
+        android:textColorHint="#2C7E29"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/enterN"
+        android:text="Enter N"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/nValue"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="N"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_marginBottom="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#701010"
+        android:text="Clear data"/>
+
+    <Button
+        android:id="@+id/fcfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#402561"
+        android:text="First Come First Serve ( FIFO )"/>
+
+    <Button
+        android:id="@+id/SSTF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#84719C"
+        android:text="Shortest Seek Time First ( SSTF )"/>
+    <Button
+        android:id="@+id/LOOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="LOOK ( Elevator Algorithm ) "/>
+    <Button
+        android:id="@+id/nstep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="N-Step SCAN"/>
+    <Button
+        android:id="@+id/cScan"
+        android:layout_width="match_parent"
+        android:backgroundTint="#6C4949"
+        android:layout_height="wrap_content"
+        android:text="C-SCAN (Circular SCAN)"/>
+    <Button
+        android:id="@+id/cLook"
+        android:layout_width="match_parent"
+        android:backgroundTint="#673AB7"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="C-LOOK"/>
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    </LinearLayout>
+
+</ScrollView>

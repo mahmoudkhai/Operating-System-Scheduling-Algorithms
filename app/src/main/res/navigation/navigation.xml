@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.operatingsystem.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_roundRobinFragment"
+            app:destination="@id/roundRobinFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_secondChapterFragment"
+            app:destination="@id/secondChapterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roundRobinFragment"
+        android:name="com.example.operatingsystem.RoundRobinFragment"
+        android:label="fragment_round_robin"
+        tools:layout="@layout/fragment_round_robin" />
+    <fragment
+        android:id="@+id/secondChapterFragment"
+        android:name="com.example.operatingsystem.SecondChapterFragment"
+        android:label="fragment_second_chapter"
+        tools:layout="@layout/fragment_second_chapter" />
+</navigation>
